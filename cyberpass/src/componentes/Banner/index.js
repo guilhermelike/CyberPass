@@ -1,16 +1,6 @@
 import './Banner.css'
-import React, { useState } from 'react';
 
 function Banner(){
-
-    const [showModal, setShowModal] = useState(false);
-
-    const handleUserIconClick = () => {
-        setShowModal(!showModal); 
-    };
-
-
-
     return(
         <header className="banner">
         <div className='header-pai'>
@@ -31,7 +21,7 @@ function Banner(){
                 <div className='coluna'>
                     <div className='linha'>
                 <div className='icones-esquerda'>
-                    <div className='user' onClick={handleUserIconClick}>
+                    <div className='user'>
                         <a href="#" className='userlink'><img src='imagens/user.png'></img></a>
                     </div>
                     <div className='cart'>
@@ -54,21 +44,6 @@ function Banner(){
                 
             </div>
         </div>
-
-
-        {/* Modal */}
-        {showModal && (
-                <div className="modal">
-                    <div className="modal-content">
-                        <h7 style={{ fontWeight: 'bold' }}><label htmlFor="username" style={{ color: 'black' }}>Usuário:</label></h7>
-                        <input type="text" id="username" className="input-field" />
-                        <h7 style={{ fontWeight: 'bold' }}><label htmlFor="password" style={{ color: 'black' }}>Senha:</label></h7>
-                        <input type="password" id="password" className="input-field" />
-                        <button className="button">Log in</button>
-                        <h5 style={{ color: 'black' }}>Não possui uma conta? <a href="#" style={{ color: '#FF005C' }}>Cadastre-se</a></h5>
-                    </div>
-                </div>
-            )}
         </header>
     )
 }
