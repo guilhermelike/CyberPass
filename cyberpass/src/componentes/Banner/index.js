@@ -60,8 +60,8 @@ function Banner(){
         {showModal && (
                 <div className="modal">
                     <div className="modal-content">
-                        <h7 style={{ fontWeight: 'bold' }}><label htmlFor="username" style={{ color: 'black' }}>Usuário:</label></h7>
-                        <input type="text" id="username" className="input-field" />
+                        <h7 style={{ fontWeight: 'bold' }}><label htmlFor="email" style={{ color: 'black' }}>Email:</label></h7>
+                        <input type="text" id="email" className="input-field" />
                         <h7 style={{ fontWeight: 'bold' }}><label htmlFor="password" style={{ color: 'black' }}>Senha:</label></h7>
                         <input type="password" id="password" className="input-field" />
                         <button className="button">Log in</button>
