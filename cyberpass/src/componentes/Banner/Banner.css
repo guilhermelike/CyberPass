@@ -2,7 +2,7 @@
 
 .banner{
     background-color: black;
-    height: 60px;
+    height: 10vh;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -125,7 +125,7 @@ a {
     border: none; 
     padding: 20px;
     width: 200px; 
-    left: 1490px; 
+    right: 22px;
     top: 46.55px; 
 }
 

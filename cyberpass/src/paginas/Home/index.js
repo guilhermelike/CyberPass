@@ -1,15 +1,18 @@
 import './Home.css'
 import { IoSearchOutline } from "react-icons/io5";
 import { IoArrowDownCircleOutline } from "react-icons/io5";
+import Banner from '../../componentes/Banner';
 
 
 
-function Home(){
+const Home = () =>{
     return(
+        <>
+        <Banner></Banner>
         <div className='background'>        
             <div className='textos'>
-                <div>
-                    <h1>A Casa dos Esports</h1>
+                <div style={{display: 'flex', justifyContent:'center'}}>
+                    <h1 style={{marginBottom: '0'}}>A Casa dos Esports</h1>
                 </div>
 
                 <div className='subtitulo'>
@@ -27,7 +30,7 @@ function Home(){
             </div>
            
         </div>
-        
+        </>
     )
 }
 

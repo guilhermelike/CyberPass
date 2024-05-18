@@ -1,5 +1,6 @@
 import './Banner.css'
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Banner(){
 
@@ -65,7 +66,7 @@ function Banner(){
                         <h7 style={{ fontWeight: 'bold' }}><label htmlFor="password" style={{ color: 'black' }}>Senha:</label></h7>
                         <input type="password" id="password" className="input-field" />
                         <button className="button">Log in</button>
-                        <h5 style={{ color: 'black' }}>Não possui uma conta? <a href="#" style={{ color: '#FF005C' }}>Cadastre-se</a></h5>
+                        <h5 style={{ color: 'black', marginBottom: '0', marginTop: '10px' }}>Não possui uma conta?<Link to="cadastro" style={{color:'#FF005C'}}>Cadastre-se</Link></h5>
                     </div>
                 </div>
             )}

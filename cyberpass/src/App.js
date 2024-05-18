@@ -1,13 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Banner from './componentes/Banner';
-import Home from './componentes/Home';
+import './componentes/Banner/index'
 
 function App() {
   return (
     <div className="App">
-      <Banner />
-      <Home />
+      
     </div>
   );
 }
