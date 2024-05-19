@@ -22,7 +22,11 @@ function Banner() {
     return (
         <header className="banner">
             <div className='header-pai'>
-                <div className='titulo'><h2>Cyber</h2><h2 className='pass'>Pass</h2></div>
+                <div className='titulo'>
+                    <Link to="/" style={{color: 'white', textDecoration: 'none', display: 'flex', flexDirection: 'row', fontSize:'20px'}}>
+                        <h2 style={{fontWeight: '300'}}>Cyber</h2><h2 className='pass'>Pass</h2>
+                    </Link>
+                </div>
                 <div className='header-meio'>
                     <div>
                         <a href='#'><h4>Campeonatos</h4></a>
