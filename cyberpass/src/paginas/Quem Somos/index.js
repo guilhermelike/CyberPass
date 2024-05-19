@@ -60,6 +60,9 @@ function QuemSomos() {
                             <p>2 Champions League</p>
                             <p>4 Dança dos famosos</p>
                             <p>1 De Férias com o Ex</p>
+                            <p>3 E-girls</p>
+                            <p>Fã #1 da Lana Del Rey</p>
+                            <p>Fã #1 da Taylor Swift</p>
                             <div className="separator"></div>
                             <div className="social-links">
                                 <a href="#"><img src="imagens/linkedin.png" alt="LinkedIn" /></a>
