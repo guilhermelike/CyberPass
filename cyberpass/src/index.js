@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './paginas/Home';
 import Login from './paginas/Login';
 import Cadastro from './paginas/Cadastro';
+import QuemSomos from './paginas/Quem Somos';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
   {
     path: "cadastro",
     element: <Cadastro/>
-  }
+  },
+  {
+    path: "quemsomos",
+    element: <QuemSomos/>
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

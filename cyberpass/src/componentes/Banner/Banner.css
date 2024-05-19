@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.banner{
+.banner {
     background-color: black;
     height: 10vh;
     text-align: center;
@@ -10,7 +10,7 @@
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.header-pai{
+.header-pai {
     display: flex;
     width: 100%;
     align-items: center;
@@ -18,18 +18,18 @@
     padding: 15px;
 }
 
-.titulo{
+.titulo {
     display: flex;
     flex-direction: row;
     font-weight: 300;
 }
 
-.titulo > h2{
+.titulo > h2 {
     font-weight: 300;
     font-size: 26px;
 }
 
-a > h4{
+a > h4 {
     font-weight: 400;
     color: white;
 }
@@ -38,57 +38,57 @@ a {
     text-decoration: none;
 }
 
-.pass{
+.pass {
     color: #FF005C;
     font-weight: 400;
 }
 
-.header-meio{
+.header-meio {
     display: flex;
     justify-content: space-between;
     width: 300px;
 }
 
-.icones{
+.icones {
     display: flex;
     align-items: center;
     width: 150px;
     justify-content: space-between;
 }
 
-.icones-esquerda{
+.icones-esquerda {
     display: flex;
     width: 50%;
     justify-content: space-evenly;
 }
 
-.icones-direita{
+.icones-direita {
     display: flex;
     width: 50%;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.coluna{
+.coluna {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
 }
 
-.linha{
+.linha {
     display: flex;
     flex-direction: row;
     width: 150px;
     align-items: center;
 }
 
-.botao{
-    margin-top:-6px;
+.botao {
+    margin-top: -6px;
     margin-bottom: -11px;
     z-index: 9999;
 }
 
-.botaolink{
+.botaolink {
     cursor: pointer;
     background-color: #005CFF;
     color: white;
@@ -102,41 +102,40 @@ a {
     margin-bottom: -5px;
     z-index: 9999;
 }
-.userlink > img{
+
+.userlink > img {
     width: 25px;
 }
 
-.cartlink > img{
+.cartlink > img {
     width: 25px;
 }
 
-.brasilink > img{
+.brasilink > img {
     width: 32px;
 }
 
-.eualink > img{
+.eualink > img {
     width: 29.7px;
 }
 
 .modal {
-    position:absolute;
+    position: absolute;
     z-index: 10000;
-    background-color: transparent; 
-    border: none; 
+    background-color: transparent;
+    border: none;
     padding: 20px;
-    width: 200px; 
+    width: 200px;
     right: 22px;
-    top: 46.55px; 
+    top: 60px;
 }
 
 .modal-content {
     background-color: #ffffff;
-
     padding: 15px;
     border: 3px solid #FF005C;
     width: 200px;
     border-radius: 8px;
-
 }
 
 .input-field {
@@ -145,7 +144,6 @@ a {
     border: none;
     padding: 8px;
     margin-top: 3%;
-    
 }
 
 #email {
@@ -159,7 +157,7 @@ a {
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top:5px;
+    margin-top: 5px;
     width: 130px;
     margin-top: 10px;
 }
@@ -168,17 +166,205 @@ a {
     background-color: #d6004c;
 }
 
+.separator {
+    height: 1px;
+    background-color: black;
+    margin: 10px 0;
+}
+
 .close {
-    color: #aaa;
+    color: black; 
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    background: none; 
+    border: none; 
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+}
+
+.accessibility-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, #FF005C, black); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10001;
+    width: 300px;
+    text-align: center;
+}
+
+.accessibility-content {
+    background: linear-gradient(to bottom, #FF005C, black); 
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.accessibility-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.accessibility-header h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.accessibility-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.font-size-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.font-size-button {
+    background-color: #ff005c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.contrast-button,
+.user-manual-button {
+    background-color: #ff005c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif !important; 
+}
+
+.auto-contrast {
+    background-color: white;
+    color: black; 
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.accessibility-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.popup-flag {
+    width: 16px; 
+}
+
+
+.cart-modal {
+    position: absolute;
+    z-index: 10000;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #ff005c;
+    padding: 20px;
+    width: 300px;
+    right: 22px;
+    top: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cart-total {
+    margin-top: 10px;
+}
+
+.cart-total p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.go-to-cart {
+    background-color: #FF005C;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.go-to-cart:hover {
+    background-color: #9b023a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.timer {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgb(4, 161, 4);
+    width: 130px;
+    border-radius: 5px;
+
+}
+
+.cart-total-timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cart-total p {
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.total-amount {
+    color: #FF005C;
 }
