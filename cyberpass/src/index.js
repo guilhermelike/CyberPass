@@ -10,6 +10,10 @@ import Home from './paginas/Home';
 import Login from './paginas/Login';
 import Cadastro from './paginas/Cadastro';
 import QuemSomos from './paginas/Quem Somos';
+import TermosECondicoes from './paginas/Termos e Condicoes';
+import Privacidade from './paginas/Privacidade';
+import MeusPedidos from './paginas/Meus Pedidos';
+import MeusDados from './paginas/Meus Dados';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +31,22 @@ const router = createBrowserRouter([
   {
     path: "quemsomos",
     element: <QuemSomos/>
+  },
+  {
+    path: "termosecondicoes",
+    element: <TermosECondicoes/>
+  },
+  {
+    path: "privacidade",
+    element: <Privacidade/>
+  },
+  {
+    path: "meuspedidos",
+    element: <MeusPedidos/>
+  },
+  {
+    path: "meusdados",
+    element: <MeusDados/>
   },
 ]);
 

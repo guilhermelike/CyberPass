@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.meus-pedidos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, black, #FF005C); 
+}
+
+.meus-pedidos-header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meus-pedidos-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.meus-pedidos-nav ul li {
+    margin: 0 20px;
+}
+
+.meus-pedidos-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    
+}
+
+.meus-pedidos-nav ul li a:hover,
+.meus-pedidos-nav ul li a:focus,
+.meus-pedidos-nav ul li a.active {
+    border-bottom: 2px solid white;
+}
+
+.user-info {
+    font-size: 18px;
+}
+
+.meus-pedidos-main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meus-pedidos-main h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FF005C;
+}
+
+.pedido-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.pedido-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.pedido-id {
+    color: red;
+    font-weight: bold;
+}
+
+.pedido-total {
+    color: red;
+    font-weight: bold;
+}
+
+.pedido-header span:first-child::before {
+    content: "Pedido ";
+    color: black;
+    font-weight: bold;
+}
+
+.pedido-header span:last-child::before {
+    content: "Total: ";
+    color: black;
+    font-weight: bold;
+}
+
+.pedido-body {
+    display: flex;
+    align-items: center;
+}
+
+.pedido-image {
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.pedido-details p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: black;
+}
+
+.separator {
+    height: 1px;
+    background-color: black;
+    margin: 10px 0;
+}
+
+.welcome-message {
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-text {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.user-name {
+    color: #FF005C;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}

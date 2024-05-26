@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.quem-somos-container {
+.termos-e-condicoes-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,33 +11,32 @@
     min-height: 100vh; 
 }
 
-.quem-somos-header nav ul {
+.termos-e-condicoes-header nav ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.quem-somos-header nav ul li {
+.termos-e-condicoes-header nav ul li {
     margin: 0 80px;
 }
 
-.quem-somos-header nav ul li a {
+.termos-e-condicoes-header nav ul li a {
     text-decoration: none;
     color: white;
-
     border-bottom: 2px solid transparent;
     padding-bottom: 5px;
     font-size: 30px;
 }
 
-.quem-somos-header nav ul li a.active,
-.quem-somos-header nav ul li a:hover,
-.quem-somos-header nav ul li a:focus {
+.termos-e-condicoes-header nav ul li a.active,
+.termos-e-condicoes-header nav ul li a:hover,
+.termos-e-condicoes-header nav ul li a:focus {
     border-bottom: 2px solid white;
 }
 
-.quem-somos-main {
+.termos-e-condicoes-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,29 +45,29 @@
     max-width: 1200px;
 }
 
-.quem-somos-info {
+.termos-e-condicoes-info {
     flex: 1;
     background-color: white;
     color: black;
     border-radius: 10px;
     padding: 20px;
     margin-right: 20px;
+    height: 700px; 
+    overflow-y: auto; 
 }
 
-.quem-somos-info p {
+.termos-e-condicoes-info p {
     font-size: 22px;
     line-height: 1.6;
     font-weight: bold;
 }
 
-.quem-somos-info footer p {
+.termos-e-condicoes-info footer p {
     margin-top: 70px;
     font-size: 23px;
-
-
 }
 
-.quem-somos-info .update-date {
+.termos-e-condicoes-info .update-date {
     color: #FF005C;
 }
 

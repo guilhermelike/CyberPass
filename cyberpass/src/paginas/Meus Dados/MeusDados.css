@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.meus-dados-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, black, #FF005C); 
+}
+
+.meus-dados-header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meus-dados-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.meus-dados-nav ul li {
+    margin: 0 20px;
+}
+
+.meus-dados-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.meus-dados-nav ul li a:hover,
+.meus-dados-nav ul li a:focus,
+.meus-dados-nav ul li a.active {
+    border-bottom: 2px solid white;
+}
+
+.welcome-message {
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-text {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.user-name {
+    color: #FF005C;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.meus-dados-main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dados-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+.dados-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.dados-header h2 {
+    margin-top: -5px;
+}
+
+.dados-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.dados-body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+}
+
+.voltar-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF005C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 23px;
+    cursor: pointer;
+    margin-top: -40px;
+}
+
+.voltar-btn:hover {
+    background-color: #e6004d;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 20px;
+    font-size: 25px;
+}
+
+.coluna p {
+    margin: 0;
+}
+
+.coluna p + p {
+    margin-top: 10px;
+}
+
+.editar-btn,
+.alterar-senha-btn {
+    background-color: #FF005C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.editar-btn:hover,
+.alterar-senha-btn:hover {
+    background-color: #e6004d;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+}
+
+input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #FF005C;
+    border-radius: 50%;
+    background-color: white;
+}
+
+input[type="radio"]:checked + label::before {
+    background-color: #FF005C;
+}
+
+.dados-form,
+.senha-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-text {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 2px solid #FF005C;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #c9c7c7;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.salvar-btn {
+    background-color: #FF005C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.salvar-btn:hover {
+    background-color: #e6004d;
+}

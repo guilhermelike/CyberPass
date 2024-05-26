@@ -11,7 +11,7 @@ function QuemSomos() {
                 <header className="quem-somos-header">
                     <nav>
                         <ul>
-                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#" className="active">Quem Somos</a></li>
                             <li><a href="#">Termos e Condições</a></li>
                             <li><a href="#">Privacidade</a></li>
                         </ul>
@@ -61,8 +61,6 @@ function QuemSomos() {
                             <p>4 Dança dos famosos</p>
                             <p>1 De Férias com o Ex</p>
                             <p>3 E-girls</p>
-                            <p>Fã #1 da Lana Del Rey</p>
-                            <p>Fã #1 da Taylor Swift</p>
                             <div className="separator"></div>
                             <div className="social-links">
                                 <a href="#"><img src="imagens/linkedin.png" alt="LinkedIn" /></a>
