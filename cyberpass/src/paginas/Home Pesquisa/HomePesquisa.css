@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+
+.background::before {
+    content: "";
+    background-image: url('../../../public/imagens/arena2.png');
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(25%);
+    background-position-y: -120px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 45px;
+}
+
+h2 {
+    font-weight: 500;
+    font: bold;
+}
+
+.rosa {
+    color: #FF005C;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.search {
+    width: 350px;
+    height: 15px;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: none !important;
+}
+
+.search:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.input-wrapper {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.icone-search {
+    color: black;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    margin-top: 2px;
+}
+
+.botaosearch {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.input-wrapper input {
+    background-color: transparent;
+    border: none;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.arrow {
+    width: 3em !important;
+    height: 3em !important;
+}
+
+.resultados-container {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    width: 50%;
+    border: 2px solid #FF005C;
+}
+
+.resultados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.resultado-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #FF005C;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+}
+
+.evento-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.evento-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.paginacao button {
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #FF005C;
+}
+
+.paginacao button:hover {
+    background-color: #FF005C;
+    color: white;
+}
+
+.botoes-grade {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.resultados.list-view {
+    display: block;
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+
+.resultados.list-view .list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #FF005C;
+}
+
+.resultados.list-view .list-item p {
+    flex: 1;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.scroll-button {
+    display: none; 
+}
+
+.evento-info h3 {
+    font-weight: bold;
+}
+
+.list-item .status {
+    color: green;
+    font-weight: bold;
+}
+
+.list-item .evento {
+    font-weight: bold;
+}

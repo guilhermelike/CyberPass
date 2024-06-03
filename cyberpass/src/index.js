@@ -14,6 +14,7 @@ import TermosECondicoes from './paginas/Termos e Condicoes';
 import Privacidade from './paginas/Privacidade';
 import MeusPedidos from './paginas/Meus Pedidos';
 import MeusDados from './paginas/Meus Dados';
+import HomePesquisa from './paginas/Home Pesquisa';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path: "meusdados",
     element: <MeusDados/>
+  },
+  {
+    path: "pesquisa",
+    element: <HomePesquisa/>
   },
 ]);
 
