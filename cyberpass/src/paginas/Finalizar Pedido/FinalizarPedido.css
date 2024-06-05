@@ -1,0 +1,386 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.meus-pedidos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, black, #FF005C);
+}
+
+.welcome-message {
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-text, .user-name {
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.welcome-text {
+    color: white;
+}
+
+.user-name {
+    color: #FF005C;
+}
+
+.pedido-entrega-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.detalhes-pedido, .entrega-info, .pagamento-info {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.detalhes-pedido {
+    width: 25%;
+}
+
+.entrega-info, .pagamento-info {
+    width: 50%;
+}
+
+.detalhes-pedido h2, .entrega-info h2, .pagamento-info h2 {
+    color: #FF005C;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pedido-info {
+    display: flex;
+}
+
+.event-image {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.evento-detalhes {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pedido-preco {
+    margin-top: 20px;
+}
+
+.item-descricao {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.valor-item, .total-preco {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.valor, .valor-total {
+    color: #FF005C;
+    font-weight: bold;
+}
+
+.tempo-restante {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.tempo-contagem {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-weight: bold;
+    color: green;
+}
+
+.tempo-icon {
+    background-color: green;
+    border-radius: 3px;
+    color: white;
+    padding: 2px 5px;
+    margin-right: 5px;
+}
+
+.separator {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.entrega-dados {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.pagamento-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.entrega-item {
+    flex: 1 1 30%;
+    margin-bottom: 10px;
+}
+
+.entrega-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.entrega-item p {
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 70px;
+}
+
+.continuar {
+    background-color: #FF005C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.editar-dados {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.editar-dados:hover, .continuar:hover {
+    background-color: #E60050;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.status-item.active {
+    color: #FF005C;
+}
+
+.status-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.status-item span {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.voltar-button {
+    background-color: #FF005C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 15px;
+    cursor: pointer;
+    left: 0;
+}
+
+.voltar-button:hover {
+    background-color: #E60050;
+}
+
+/* New CSS for Pagamento Form */
+
+.pagamento-info .pagamento-form {
+    border: 2px solid #FF005C;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.pagamento-info .form-group {
+    margin-bottom: 15px;
+}
+
+.pagamento-info .form-row {
+    display: flex;
+    gap: 30px;
+}
+
+.pagamento-info .form-group input {
+    width:96%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #FF005C;
+    background-color: #e6e6e6;
+}
+
+.pagamento-info .form-group select {
+    width:100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #FF005C;
+    background-color: #e6e6e6;
+}
+
+.pagamento-info .form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.pagamento-info .continuar {
+    width: 100%;
+    background-color: #FF005C;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagamento-info .continuar:hover {
+    background-color: #E60050;
+}
+
+.validacao-info {
+    width: 50%;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.validacao-info .status-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.validacao-info .status-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.validacao-info .status-item.active {
+    color: #FF005C;
+}
+
+.validacao-info .status-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.validacao-info .status-item span {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.validacao-info .validacao-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.validacao-info .validacao-dados {
+    border: 2px solid #FF005C;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.validacao-info .validacao-dados .entrega,
+.validacao-info .validacao-dados .pagamento {
+    margin-bottom: 20px;
+}
+
+
+.validacao-info .validacao-dados h3 {
+    font-size: 23px;
+    color: #FF005C;
+    margin-bottom: 10px;
+}
+
+.validacao-info .validacao-dados p {
+    font-size: 23px;
+    margin: 5px 0;
+}
+
+.validacao-info .actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.validacao-info .confirmar {
+    width: 100%;
+    background-color: #FF005C;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.validacao-info .confirmar:hover {
+    background-color: #E60050;
+}

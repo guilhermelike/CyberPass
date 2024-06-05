@@ -15,6 +15,7 @@ import Privacidade from './paginas/Privacidade';
 import MeusPedidos from './paginas/Meus Pedidos';
 import MeusDados from './paginas/Meus Dados';
 import HomePesquisa from './paginas/Home Pesquisa';
+import FinalizarPedido from './paginas/Finalizar Pedido'
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
   {
     path: "pesquisa",
     element: <HomePesquisa/>
+  },
+  {
+    path: "finalizarpedido",
+    element: <FinalizarPedido/>
   },
 ]);
 
