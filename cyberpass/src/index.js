@@ -16,6 +16,7 @@ import MeusPedidos from './paginas/Meus Pedidos';
 import MeusDados from './paginas/Meus Dados';
 import HomePesquisa from './paginas/Home Pesquisa';
 import FinalizarPedido from './paginas/Finalizar Pedido'
+import VisualizarCampeonato from './paginas/Visualizar Campeonato';
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "finalizarpedido",
     element: <FinalizarPedido/>
+  },
+  {
+    path: "visualizarcampeonato",
+    element: <VisualizarCampeonato/>
   },
 ]);
 

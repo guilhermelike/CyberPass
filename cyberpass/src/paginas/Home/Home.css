@@ -105,3 +105,67 @@ h2{
     width: 3em !important;
     height: 3em !important;
 }
+
+.campeonatos {
+    padding: 20px;
+    background: linear-gradient(to bottom, black, #FF005C); 
+    color: white;
+}
+
+.campeonatos h2, .campeonatos h3 {
+    margin: 0 0 10px 0;
+}
+
+.mais-pesquisados, .destaques, .eventos, .rio-de-janeiro {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    width: 250px; 
+}
+
+.card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.caption {
+    position: relative;
+    width: 100%;
+    left: 0;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.caption.white {
+    bottom: 0;
+    color: white;
+    font-weight: bold;
+    
+
+
+}
+
+.caption.green {
+    bottom: 0;
+    color: green;
+    font-weight: bold;
+
+}
+
+.destaque-imagem {
+    width: 60%;
+    height: auto;
+    margin-left: 300px;
+}
